@@ -1,7 +1,25 @@
 aid: best-food-trucks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/best-food-trucks.png
 name: Best Food Trucks
-description: Best Food Trucks is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Best Food Trucks (BFT) operates a food truck booking, scheduling, and mobile
+  ordering platform that connects food truck vendors with property managers, office buildings,
+  event organizers, and hungry customers. The platform lets locations schedule rotating
+  food trucks, lets customers browse menus and place mobile orders ahead of time, and gives
+  trucks a point-of-sale and payments surface for on-site service. Backed by Techstars, the
+  company was surfaced as a portfolio-company lead and enriched into the API Evangelist network.
+  This profile currently carries only public infrastructure and security artifacts; no public
+  API, developer portal, or OpenAPI surface was discoverable during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/best-food-trucks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Food Trucks
+- Food and Beverage
+- Mobile Ordering
+- Events
+- Catering
+- Point of Sale
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/best-food-trucks-vulnerability-disclosure.yml
+- type: Security
+  url: security/best-food-trucks-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/best-food-trucks-domain-security.yml
+- type: SecurityTxt
+  url: well-known/best-food-trucks-security.txt
+- type: WellKnown
+  url: well-known/best-food-trucks-well-known.yml
 - type: Website
   url: https://bestfoodtrucks.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
